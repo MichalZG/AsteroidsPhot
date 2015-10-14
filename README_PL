@@ -1,0 +1,101 @@
+Żeby uruchomić aplikację należy spełnić następujące wymagania:
+
+    Python 2.7
+
+    Biblioteki Python
+        numpy >= 1.6
+        scipy
+        astropy (instalacja poniżej)
+        alipy (instalacja poniżej)
+            asciidata
+            sextractor
+        matplotlib (instalacja poniżej)
+        ccdproc (instalacja poniżej)
+        telnetlib
+        astroquery (instalacja poniżej)
+		
+	SExtractor
+	
+	Astrometry (instalacja poniżej)
+
+
+Instalacja biblioteki astroquery:
+    Astroquery można zainstalować przez pip:
+        pip install astroquery
+        pip install https://github.com/astropy/astroquery/archive/master.zip
+    lub ze źródeł:
+        git clone https://github.com/astropy/astroquery.git
+        cd astroquery
+        python setup.py install
+
+Instalacja biblioteki alipy, asciidata i sextractora:
+    instalacja sextractor:
+        Sposób 1)
+            Sextractor można zainstalować poprzez:
+                sudo apt-get install sextractor
+                lub Ubuntu Software Center
+        Sposób 2)
+            Sextractor można również zainstalować ze źródeł.
+            http://www.astromatic.net/software/sextractor
+
+    instalacja asciidata :
+        ściągnij paczkę ze strony
+        www.stecf.org/software/PYTHONtools/astroasciidata/source/asciidata-1.1.1.tar.gz
+        tar -xvf asciidata-1.1.1.tar
+        cd asciidata-1.1.1
+        python setup.py install
+        można usunąć niepotrzbne pliki (cd .. && rm -r asciidata-1.1.1)
+
+    instalacja alipy :
+        sudo apt-get install subversion
+        svn checkout https://svn.epfl.ch/svn/mtewes-public/trunk/alipy2 ./alipy
+        cd alipy
+        python setup.py install --user
+        można usunąć niepotrzbne pliki(cd .. && rm -r alipy)
+
+        Jeżeli sextractor został zainstalowany za pomocą poprzez apt-get lub Ubuntu Software Center należy dodatkowo zmodyfikować plik pysex.py.
+        (Jeżeli nie sextractor został zainstalowany już wcześniej i nie wiemy którą wersję mamy zainstalowaną - można uruchomić w konsoli polecenie sextractor - jeśli komenda nie jest rozpoznawana należy wykonać poniższe polecenia)
+        W pliku pysex.py: należy zmienić następujące linie
+        W linii 27
+                - os.system("sex -d > .pysex.sex")
+                + os.system("sextractor -d > .pysex.sex")
+
+        W linii 95
+            - cmd = ' '.join(['sex', ref, img, '-c .pysex.sex '])
+            + cmd = ' '.join(['sextractor', ref, img, '-c .pysex.sex '])
+
+        Plik pysex.py najprawdopodobniej znajduje się w katalogu:
+            /home/$USERNAME/.local/lib/python2.7/site-packages/alipy
+        Jeżeli nie ma go w domyślnej lokalizacji najlepiej przeszukać komputer za pomocą komendy
+            sudo find / -name 'pysex.py'
+			
+			
+Instalacja matplotlib:
+	sudo apt-get install python-matplotlib
+	
+Instalacja ccdproc:
+    Instalacja przez pip:
+        pip install --no-deps ccdproc
+    Instalacja ze źródeł:
+        http://ccdproc.readthedocs.org/en/latest/ccdproc/install.html
+		
+Instalacja astropy:
+    Instalacja przez pip
+        pip install astropy
+    Instalacja ze źródeł:
+        http://www.astropy.org/
+	
+Instalacja Astrometry:
+		wget http://astrometry.net/downloads/astrometry.net-latest.tar.bz2
+		tar xjf astrometry.net-latest.tar.bz2
+		cd astrometry.net-*
+		make
+		make py
+		make extra
+		make install  # aby umieścić w folderze /usr/local/astrometry
+		# lub:
+		make install INSTALL_DIR=/some/other/place
+		
+	Zapoznaj się z treścią http://astrometry.net/doc/readme.html oraz pobierz odpowiednie indeksy ze strony:
+	http://broiler.astrometry.net/~dstn/4200/
+

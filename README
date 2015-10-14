@@ -1,0 +1,103 @@
+Dependencies:
+
+    Python 2.7
+
+    Python libraries
+        numpy >= 1.6
+        scipy
+        astropy (instruction below)
+        alipy (instruction below)
+             - asciidata
+             - sextractor
+        matplotlib (instruction below)
+        ccdproc (instruction below)
+        telnetlib
+        astroquery(instruction below)
+		
+	SExtractor
+	
+	Astrometry (instruction below)
+	
+
+Install astroquery:
+    Instalation by pip:
+        pip install astroquery
+        pip install https://github.com/astropy/astroquery/archive/master.zip
+    Instalation from sources:
+        git clone https://github.com/astropy/astroquery.git
+        cd astroquery
+        python setup.py install
+
+Install alipy
+    Install sextractor:
+         1)
+            Install sextractor from apt-get or Ubuntu Software Center:
+                sudo apt-get install sextractor
+                Ubuntu Software Center -> find sextractor -> install
+         2)
+            Install from sources.
+            http://www.astromatic.net/software/sextractor
+
+    Install asciidata :
+        download sources from:
+        www.stecf.org/software/PYTHONtools/astroasciidata/source/asciidata-1.1.1.tar.gz
+        tar -xvf asciidata-1.1.1.tar
+        cd asciidata-1.1.1
+        python setup.py install
+        (cd .. && rm -r asciidata-1.1.1)
+
+    Install alipy :
+        sudo apt-get install subversion
+        svn checkout https://svn.epfl.ch/svn/mtewes-public/trunk/alipy2 ./alipy
+        cd alipy
+        python setup.py install --user
+        (cd .. && rm -r alipy)
+
+        If sextractor was installed by apt-get or Ubuntu Software Center you have to modify file pysex.py.
+        If you don't know which version of sextractor do you have, run 'sextractor' in your console. If this command doesn't exist you have to modify pysex.py.
+        
+
+        Line 27
+                - os.system("sex -d > .pysex.sex")
+                + os.system("sextractor -d > .pysex.sex")
+
+        Line 95
+            - cmd = ' '.join(['sex', ref, img, '-c .pysex.sex '])
+            + cmd = ' '.join(['sextractor', ref, img, '-c .pysex.sex '])
+
+        Default location of pysex.py file is:
+            /home/$USERNAME/.local/lib/python2.7/site-packages/alipy
+        If there is no such file in this location, find its location:
+            sudo find / -name 'pysex.py'
+
+Install matplotlib:
+    sudo apt-get install python-matplotlib (Ubuntu)
+
+Install ccdproc:
+    Install by pip:
+        pip install --no-deps ccdproc
+    Install from sources:
+        http://ccdproc.readthedocs.org/en/latest/ccdproc/install.html
+
+Install astropy:
+    Install by pip
+        pip install astropy
+    Install from sources:
+        http://www.astropy.org/
+		Instalacja matplotlib:
+	sudo apt-get install python-matplotlib
+	
+	
+Install Astrometry:
+		wget http://astrometry.net/downloads/astrometry.net-latest.tar.bz2
+		tar xjf astrometry.net-latest.tar.bz2
+		cd astrometry.net-*
+		make
+		make py
+		make extra
+		make install  # to put it in /usr/local/astrometry
+		# or:
+		make install INSTALL_DIR=/some/other/place
+		
+	Read the http://astrometry.net/doc/readme.html then grab some index files from:
+	http://broiler.astrometry.net/~dstn/4200/

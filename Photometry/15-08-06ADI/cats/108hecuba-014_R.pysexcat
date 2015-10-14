@@ -1,0 +1,10 @@
+#   1 VECTOR_ASSOC           ASSOCiated parameter vector                               
+#   2 FLUX_BEST              Best of FLUX_AUTO and FLUX_ISOCOR                          [count]
+#   3 FLUXERR_BEST           RMS error for BEST flux                                    [count]
+#   4 MAG_BEST               Best of MAG_AUTO and MAG_ISOCOR                            [mag]
+#   5 MAGERR_BEST            RMS error for MAG_BEST                                     [mag]
+#   6 FLAGS                  Extraction flags                                          
+           3     89588.82     258.9746 -12.3806   0.0031   0
+           0     72583.09     249.8604 -12.1521   0.0037   0
+           2     279398.7     269.1078 -13.6156   0.0010   2
+           1     16400.45     247.7094 -10.5371   0.0164   0

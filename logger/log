@@ -1,0 +1,99 @@
+2015-10-06 10:34:53,505 - sortFrames - INFO - Sort frames to biases, flats and darks
+2015-10-06 10:34:53,556 - getMedianForObjects - INFO - Create medians from list with red objects
+2015-10-06 10:34:54,716 - reduceFrames - INFO - Reducing frames started
+2015-10-06 10:35:39,992 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-001_R reduced
+2015-10-06 10:35:44,060 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-002_R reduced
+2015-10-06 10:35:57,365 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-003_R reduced
+2015-10-06 10:36:01,009 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-004_R reduced
+2015-10-06 10:36:05,424 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-005_R reduced
+2015-10-06 10:36:09,473 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-006_R reduced
+2015-10-06 10:36:13,305 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-007_R reduced
+2015-10-06 10:36:23,010 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-008_R reduced
+2015-10-06 10:36:26,740 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-009_R reduced
+2015-10-06 10:36:30,312 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-010_R reduced
+2015-10-06 10:36:34,013 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-011_R reduced
+2015-10-06 10:36:38,121 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-012_R reduced
+2015-10-06 10:36:42,368 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-013_R reduced
+2015-10-06 10:36:46,278 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-014_R reduced
+2015-10-06 10:36:50,171 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-015_R reduced
+2015-10-06 10:36:53,985 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-016_R reduced
+2015-10-06 10:36:57,882 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-017_R reduced
+2015-10-06 10:37:01,602 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-018_R reduced
+2015-10-06 10:37:05,376 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-019_R reduced
+2015-10-06 10:37:09,163 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-020_R reduced
+2015-10-06 10:37:12,902 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-021_R reduced
+2015-10-06 10:37:16,597 - reduceFrames - INFO - Frame ../../Reduction/15-08-06ADI/108hecuba-022_R reduced
+2015-10-06 10:37:16,597 - reduceFrames - INFO - Reduced 22 frames
+2015-10-06 10:37:16,637 - clean - INFO - Remove all unnecessary files created during reduction
+2015-10-06 10:37:16,638 - run - INFO - Photometry has started
+2015-10-06 10:37:16,645 - getFromHorizon - INFO - Getting asteroid's coordinates from Horizon started
+2015-10-06 10:37:26,055 - takecoordinates - INFO - Data from Horizon succesfully downloaded
+2015-10-06 10:37:26,055 - getFromHorizon - INFO - Getting asteroid's coordinates from Horizon finished
+2015-10-06 10:37:26,273 - matchCoordFrames - INFO - List with asteroid's coordinates matched with amount of object's frames
+2015-10-06 10:37:26,274 - getCompStars - INFO - Getting stars' coordinates from astroquery
+2015-10-06 10:37:26,370 - _new_conn - INFO - Starting new HTTP connection (1): vizier.u-strasbg.fr
+2015-10-06 10:37:27,511 - chooseStars - INFO - Choose stars at most 2 magnitudo lighter than asteroid
+2015-10-06 10:37:27,511 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:27,523 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:27,524 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:27,693 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:27,704 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:27,704 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:27,785 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:27,799 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:27,799 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:27,884 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:27,895 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:27,895 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:27,962 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:27,973 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:27,973 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,047 - takeMag - INFO - Get magnitudo for wcs coordinates
+2015-10-06 10:37:28,058 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,059 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,153 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,153 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,233 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,233 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,325 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,325 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,410 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,410 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,491 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,492 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,587 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,588 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,673 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,673 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,755 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,756 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,836 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,836 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:28,916 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:28,917 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,069 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,070 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,149 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,150 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,224 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,225 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,307 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,307 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,389 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,390 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,469 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,470 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,544 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,545 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,628 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,628 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,707 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,707 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,784 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,785 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,876 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,877 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:29,959 - convertCoordinates - INFO - Ra and dec converted to x, y coords
+2015-10-06 10:37:29,959 - createAssoc - INFO - Edit assoc file
+2015-10-06 10:37:30,026 - writeFinalFile - INFO - Data wrote to photoresult file
+2015-10-06 10:37:30,026 - run - INFO - Photometry has just finished
